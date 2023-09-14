@@ -1,0 +1,171 @@
+:root{
+    --colorHeader: #040823;
+    --colorElement: #D99E1C;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    border: 1px solid magenta;
+}
+
+/* Debut stylisation section header  */
+
+/* Disposition des element du premier header en grille */
+.firstSectionHeader {
+    border: 1px solid maroon;
+    background-color: var(--colorHeader);
+    width: 100%;
+    /* height: 10vh; */
+    color: white;
+    display: grid;
+    grid-template-columns: 27% 27% 27% 10%;
+    padding: 20px;
+}
+
+.firstSectionHeader .icone{
+    color: var(--colorElement);
+}
+
+.firstSectionHeader .sousSectionFirstheader1{
+    margin-left: 60px;
+}
+
+.firstSectionHeader .firstSectionHeader .icone {
+    color: var(--colorElement);
+}
+
+.firstSectionHeader .sousSectionFirstheader4 .iconeAvecFond{
+    width: 25px;
+    margin: 2px;
+    text-align: center;
+    display: inline-block;
+    background-color: gray;
+    border-radius: 3px;
+}
+
+/* Sttlisation du menu  */
+.secondSectionHeader{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 35% 58%;
+
+}
+.secondSectionHeader .logo  {
+    margin-left: 60px;
+}
+
+.secondSectionHeader .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+.secondSectionHeader .menu a{
+    text-decoration: none;
+    font-weight: 700; 
+    color: #303030;
+}
+
+.secondSectionHeader .menu .chevron, .home{
+    color: var(--colorElement);
+}
+
+/* Fin stylisation du header  */
+
+/* Debut stylisation de la partie principale  */
+/* Image de couverture avec les slyder  */
+.couverture{
+    height: 400px;
+    margin-top: 20px;
+    background-color: var(--colorHeader);
+    
+}
+.couverture img {
+    width: 100%;
+    height: 400px;
+}
+
+.couverture p {
+    position: relative;
+    margin-top: -50px;
+    height: 5vh;
+    text-align: center;
+}
+
+.couverture p .rond {
+    margin: 2px; 
+    padding: 0 5px;
+    border-radius: 100%;
+    background-color: white;
+    color: white;
+}
+
+.couverture p .rond2 {
+    color: var(--colorElement);
+    background-color: var(--colorElement);
+}
+
+/* stylisation de la partie about  */
+.aboutUs {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 40px;
+}
+
+.aboutUs .textPart{
+    margin-left: 60px;
+}
+
+
+/* Stylisation des barre de progression */
+.pourcentage{
+    margin-top: 30px;
+}
+
+
+.progressbar-wrapper{
+    background-color: gray;
+    height: 0.4vh;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.progressbar{
+    background-color: var(--colorElement);
+    height: 0.4vh;
+}
+
+.wealth{
+    width: 70%;
+}
+.wealthPoucentage{
+    margin-left: 45%;
+}
+
+.business{
+    width: 50%;
+}
+.businessPourcentage{
+    margin-left: 25%;
+}
+
+.insurance{
+    width: 87%;
+}
+.insurancePourcentage{
+    margin-left: 55%;
+}
+
+.cash{
+    width: 95%;
+}
+.cashPourcentage{
+    margin-left: 75%;
+}
+
+
