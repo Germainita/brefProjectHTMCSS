@@ -8,6 +8,9 @@
     padding: 0;
 }
 
+body{
+    width: auto;
+}
 
 
 
@@ -17,13 +20,18 @@
 .firstSectionHeader {
     background-color: var(--colorHeader);
     width: 100%;
-    /* height: 10vh; */
     color: white;
     display: grid;
     grid-template-columns: 27% 27% 27% 10%;
     padding: 20px;
+    padding-right: 0;
+    box-sizing: border-box;    
+    /* box-sizing: border-box permet limite les padding 
+    du conteneur mere pour qu'il ne dépasse pas la taille de l'écran */
+    
 }
 
+/* Les icones Adresse telephones et date  */
 .firstSectionHeader .icone{
     color: var(--colorElement);
 }
@@ -36,6 +44,7 @@
     color: var(--colorElement);
 }
 
+/* Les icones réseau sociaux */
 .firstSectionHeader .sousSectionFirstheader4 .iconeAvecFond{
     width: 25px;
     margin: 2px;
@@ -45,7 +54,9 @@
     border-radius: 3px;
 }
 
-/* Sttlisation du menu  */
+/* Stylisation du menu  */
+/* sectionner en grille de deux colonnes: Une pour le logo
+et une autre pour le sous menu */
 .secondSectionHeader{
     margin-top: 20px;
     display: grid;
@@ -58,7 +69,6 @@
 }
 
 .secondSectionHeader .menu {
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     
@@ -90,6 +100,10 @@
     height: 400px;
 }
 
+/* Fin de la stylisation pour l'image de couverture  */
+
+
+/* Stylisation des point rond  */
 .couverture p {
     position: relative;
     margin-top: -50px;
@@ -185,7 +199,7 @@ h3{
 
 .imageAbout img {
     height: 100%;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 footer{
@@ -194,7 +208,7 @@ footer{
     color: white;
     text-align: center;
     padding: 30px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .service {
