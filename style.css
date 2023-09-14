@@ -10,6 +10,7 @@
 
 
 
+
 /* Debut stylisation section header  */
 
 /* Disposition des element du premier header en grille */
@@ -49,6 +50,7 @@
     margin-top: 20px;
     display: grid;
     grid-template-columns: 35% 58%;
+    align-items: center;
 
 }
 .secondSectionHeader .logo  {
@@ -56,6 +58,7 @@
 }
 
 .secondSectionHeader .menu {
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     
@@ -76,6 +79,7 @@
 /* Debut stylisation de la partie principale  */
 /* Image de couverture avec les slyder  */
 .couverture{
+    width: 100%;
     height: 400px;
     margin-top: 20px;
     background-color: var(--colorHeader);
@@ -112,14 +116,21 @@
     display: grid;
     grid-template-columns: 40% 40%;
     gap: 40px;
+    justify-content: center;
 }
 
 .aboutUs .textPart{
-    margin-left: 60px;
+    margin-left: 90px;
+
+}
+
+h3{
+    margin-bottom: 20px;
+    font-size: 40px;
 }
 
 .textPart p {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 /* Stylisation des barre de progression */
@@ -168,4 +179,50 @@
     margin-left: 75%;
 }
 
+.imageAbout{
+    height: 100%;
+}
 
+.imageAbout img {
+    height: 100%;
+    margin-left: 50px;
+}
+
+footer{
+    background: linear-gradient(0deg, rgb(0,0,0, 0.9),  rgb(0,0,0, 0.9)), url("https://media.istockphoto.com/id/965674066/photo/doing-intense-hard-gym-training-with-rope-at-gym.jpg?s=1024x1024&w=is&k=20&c=EXOljAIhZKRzSllglKHx_uibyISDRRv9xPEWTsKZZQc=");
+    /* background-color: var(--colorHeader); */
+    color: white;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.service {
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.textService{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.footerSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.elementSection i{
+    color: var(--colorElement);
+    font-size: 30px;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.sousTitre{
+    font-size: 14px;
+}
